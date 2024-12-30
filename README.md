@@ -1,0 +1,3 @@
+This repository demonstrates a common error encountered when using the `useNavigate` hook in React Router v6 within a component that's not yet mounted. The error arises when trying to use `useNavigate` before the component has fully rendered, often resulting in unexpected navigation failures.
+
+The `bug.js` file showcases the problematic code. The solution, provided in `bugSolution.js`, addresses the issue by ensuring navigation only occurs after the component has successfully mounted using useEffect and its dependencies or by wrapping the navigation within a conditional check.
